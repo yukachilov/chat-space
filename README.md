@@ -23,6 +23,7 @@ Things you may want to cover:
 
 * ...
 
+<<<<<<< Updated upstream
 
 
 ## usersテーブル
@@ -62,3 +63,5 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - belongs_to :group
+=======
+>>>>>>> Stashed changes
