@@ -1,3 +1,153 @@
 * {
   box-sizing: border-box;
 }
+
+.side-content {
+  float: left;
+  width: 300px;
+  a {
+    color: white;
+  }
+}
+
+.side-header {
+  background-color: #253141;
+  padding: 0 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  &__box {
+    height: 20px;
+    // background-color: #333333;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+      &__menu {
+        display: flex;
+      }
+  }
+}
+
+.side-ber {
+  padding: 20px 20px 0;
+  background-color: #2f3e51;
+  height: calc(100vh - 100px);
+  &__box {
+    margin: 20px;
+    color: white;
+  }
+  &__box-name {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  &__box-message {
+    font-size: 11px;
+    margin-top: 5px;
+  }
+}
+
+.main-content {
+  float: left;
+  width: calc(100% - 300px);
+}
+
+.header {
+  height: 100px;
+  background-color: #ffffff;
+  border-bottom: solid 1px #eeeeee;
+  padding: 0 40px;
+  display: flex;
+  &__left-box {
+    margin-top: 35px;
+    &__current-group {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    &__member-list {
+      display: flex;
+      font-size: 12px;
+      list-style: none;
+      color: #eeeeee;
+    }
+    
+  }
+  &__right-box {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    margin-top: 30px;
+    border: solid 1px;
+    position: absolute;
+    right: 40px;
+  }
+}
+
+.messages {
+  height: calc(100vh - 190px);
+  padding: 46px 40px;
+  background-color: #fafafa;
+  .message {
+    padding-bottom: 40px;
+    font-size: 12px;
+    &__upper-info {
+      display: flex;
+      margin-bottom: 12px;
+    &__talker {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    &__date {
+      font-size: 12px;
+      margin-left: 10px;
+      color: #999999;
+    }
+    }
+    &__text {
+      font-size: 14px;
+      color: #434A54;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form {
+  height: 90px;
+  padding: 20px 40px;
+  background-color: #d2d2d2;
+  form {
+    display: flex;
+    .input-box {
+      position: relative;
+      width: 100%;
+      &__text {
+        height: 50px;
+        width: 100%;
+        padding: 0 40px 0 10px;
+        color: white;
+        border-style: none;
+      }
+      &__image {
+        font-size: 1.3rem;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        &__file {
+          display: none;
+        }
+      }
+    }
+    .submit-btn {
+      background-color: skyblue;
+      border: none;
+      color: white;
+      float: right;
+      font-size: 16px;
+      height: 50px;
+      margin-left: 15px;
+      padding: 0 30px;
+    }
+  }
+}

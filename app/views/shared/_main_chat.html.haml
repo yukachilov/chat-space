@@ -1,1 +1,27 @@
-a
+.main-content
+  .header
+    .header__left-box
+      .hesder__left-box__current-group
+        グループ名
+      .header__left-box__member-list
+        a b c
+    = link_to '#' do
+      .header__right-box Edit
+
+  .messages
+    .message__upper-info
+      .message__upper-info__talker
+        abe
+      .message__upper-info__date
+      2/7
+    .message__text
+      テスト
+
+  .form
+    %form.new_message
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class: "submit-btn"}
