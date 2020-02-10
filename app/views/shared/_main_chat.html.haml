@@ -2,26 +2,23 @@
   .header
     .header__left-box
       .hesder__left-box__current-group
-        グループ名
+      = @group.name
       .header__left-box__member-list
-        a b c
-    = link_to '#' do
+        Menber :
+        - @group.users.each do |user|
+          %li.header__left-box__member-list__member= user.name
+    
+    = link_to "#" do
       .header__right-box Edit
 
   .messages
-    .message__upper-info
-      .message__upper-info__talker
-        abe
-      .message__upper-info__date
-      2/7
-    .message__text
-      テスト
+  = render @messages
 
   .form
-    %form.new_message
+    = form_for [@group, @message] do |f|
       .input-box
-        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
-        %label{class: "input-box__image"}
+        = f.text_field :content, class: 'input-box__text', placeholder: 'type a message'
+        = f.label :image, class: 'input-box__image' do
           = icon('fas', 'image')
-          %input{type: "file", class: "input-box__image__file"}
-      %input{type: "submit", class: "submit-btn"}
+          = f.file_field :image, class: 'input-box__image__file'
+      = f.submit 'Send', class: 'submit-btn'
