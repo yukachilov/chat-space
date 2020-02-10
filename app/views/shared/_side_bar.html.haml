@@ -4,16 +4,16 @@
       abe
       %ul.side-header__box__menu
         %ul.side-header__box__menu__new-group
-          = link_to "#" do
+          = link_to new_group_path do
             = icon('fas', 'edit')
         %ul.side-header__box__menu__new-group
-          = link_to "#" do
+          = link_to edit_user_path(current_user.id) do
             = icon('fas', 'cog')
 
   .side-ber
+    -# - current_user.groups.each do |group|
     .side-ber__box
-      abc
-      .side-ber__box-name
-        def
-      .side-ber__box-message
-            
+      = link_to '#' do
+        .side-ber__box-name
+          -# = group.name
+        .side-ber__box-message
