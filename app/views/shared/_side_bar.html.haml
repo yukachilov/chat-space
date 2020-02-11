@@ -1,7 +1,7 @@
 .side-content
   .side-header
     .side-header__box
-      abe
+      = current_user.name
       %ul.side-header__box__menu
         %ul.side-header__box__menu__new-group
           = link_to new_group_path do
@@ -11,9 +11,10 @@
             = icon('fas', 'cog')
 
   .side-ber
-    -# - current_user.groups.each do |group|
-    .side-ber__box
-      = link_to '#' do
-        .side-ber__box-name
-          -# = group.name
-        .side-ber__box-message
+    - current_user.groups.each do |group|
+      .side-ber__box
+        = link_to group_messages_path(group) do
+          .side-ber__box-name
+            = group.name
+          .side-ber__box-message
+            = group.show_last_message
