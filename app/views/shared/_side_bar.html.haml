@@ -10,11 +10,11 @@
           = link_to edit_user_path(current_user.id) do
             = icon('fas', 'cog')
 
-  .side-ber
+  .side-bar
     - current_user.groups.each do |group|
-      .side-ber__box
+      .side-bar__box
         = link_to group_messages_path(group) do
-          .side-ber__box-name
+          .side-bar__box-name
             = group.name
-          .side-ber__box-message
+          .side-bar__box-message
             = group.show_last_message

@@ -31,10 +31,11 @@
   }
 }
 
-.side-ber {
+.side-bar {
   padding: 20px 20px 0;
   background-color: #2f3e51;
   height: calc(100vh - 100px);
+  overflow: scroll;
   &__box {
     margin: 20px;
     color: white;
@@ -60,6 +61,7 @@
   border-bottom: solid 1px #eeeeee;
   padding: 0 40px;
   display: flex;
+  overflow: scroll;
   &__left-box {
     margin-top: 35px;
     &__current-group {
@@ -85,10 +87,11 @@
   }
 }
 
-.message {
+.messages {
   height: calc(100vh - 190px);
   padding: 46px 40px;
   background-color: #fafafa;
+  overflow: scroll;
   .message {
     padding-bottom: 40px;
     font-size: 12px;
