@@ -96,7 +96,7 @@ $(function(){
     }
     })
     .fail(function() {
-      console.log('alert');
+      alert("error");
     });
     
   };
