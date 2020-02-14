@@ -36,8 +36,9 @@
   background-color: #2f3e51;
   height: calc(100vh - 100px);
   overflow: scroll;
+  text-decoration: none;
   &__box {
-    margin: 20px;
+    margin-bottom: 40px;
     color: white;
   }
   &__box-name {
@@ -87,6 +88,7 @@
     border: solid 1px;
     position: absolute;
     right: 40px;
+    color: #38AEF0;
   }
 }
 
@@ -146,7 +148,7 @@
       }
     }
     .submit-btn {
-      background-color: skyblue;
+      background-color: #38AEF0;
       border: none;
       color: white;
       float: right;
