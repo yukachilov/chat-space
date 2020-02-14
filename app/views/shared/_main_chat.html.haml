@@ -1,8 +1,8 @@
 .main-content
   .header
     .header__left-box
-      .hesder__left-box__current-group
-      = @group.name
+      .header__left-box__current-group
+        = @group.name
       .header__left-box__member-list
         Menber :
         - @group.users.each do |user|
