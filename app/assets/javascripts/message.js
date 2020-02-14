@@ -3,11 +3,11 @@ $(function(){
    if ( message.image ) {
      var html =
       `<div class="message" data-message-id=${message.id}>
-         <div class="upper-info">
-           <div class="upper-info__talker">
+         <div class="message__upper-info">
+           <div class="message__upper-info__talker">
              ${message.user_name}
            </div>
-           <div class="upper-info__date">
+           <div class="message__upper-info__date">
              ${message.created_at}
            </div>
          </div>
@@ -20,11 +20,11 @@ $(function(){
    } else if ( message.content ) {
      var html =
       `<div class="message" data-message-id=${message.id}>
-         <div class="upper-info">
-           <div class="upper-info__talker">
+         <div class="message__upper-info">
+           <div class="message__upper-info__talker">
              ${message.user_name}
            </div>
-           <div class="upper-info__date">
+           <div class="message__upper-info__date">
              ${message.created_at}
            </div>
          </div>
@@ -36,11 +36,11 @@ $(function(){
    } else if ( message.image ) {
      var html =
       `<div class="message" data-message-id=${message.id}>
-          <div class="upper-info">
-            <div class="upper-info__talker">
+          <div class="message__upper-info">
+            <div class="message__upper-info__talker">
               ${message.user_name}
             </div>
-            <div class="upper-info__date">
+            <div class="message__upper-info__date">
               ${message.created_at}
             </div>
           </div>
